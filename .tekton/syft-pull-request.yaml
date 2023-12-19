@@ -3,8 +3,7 @@ kind: PipelineRun
 metadata:
   annotations:
     build.appstudio.openshift.io/repo: https://github.com/spork-madness/go-hermetic-example?rev=eec54871c22713523ff83ebfc021d681a5d4f3cb
-    build.appstudio.redhat.com/commit_sha: '{{revision}}'
-    build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
+    build.appstudio.redhat.com/commit_sha: 'eec54871c22713523ff83ebfc021d681a5d4f3cb'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-event: '[pull_request]'
@@ -25,7 +24,7 @@ spec:
   - name: image-expires-after
     value: 5d
   - name: output-image
-    value: quay.io/redhat-user-workloads/arewm-tenant/syft/syft:on-pr-{{revision}}
+    value: quay.io/redhat-user-workloads/arewm-tenant/go-hermetic-example/go-hermetic-example:on-pr-{{revision}}
   - name: path-context
     value: .
   - name: revision
