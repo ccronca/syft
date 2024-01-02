@@ -8,18 +8,18 @@ metadata:
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-event: '[pull_request]'
     pipelinesascode.tekton.dev/on-target-branch: '[main]'
-    pac.test.appstudio.openshift.io/on-event: '[push]'
-    pac.test.appstudio.openshift.io/repo-url: 'https://github.com/spork-madness/go-hermetic-example'
-    pac.test.appstudio.openshift.io/repository: go-hermetic-example
-    pac.test.appstudio.openshift.io/sha-url: https://github.com/spork-madness/go-hermetic-example/commit/eec54871c22713523ff83ebfc021d681a5d4f3cb
+    pipelinesascode.tekton.dev/on-event: '[push]'
+    pipelinesascode.tekton.dev/repo-url: 'https://github.com/spork-madness/go-hermetic-example'
+    pipelinesascode.tekton.dev/repository: go-hermetic-example
+    pipelinesascode.tekton.dev/sha-url: https://github.com/spork-madness/go-hermetic-example/commit/eec54871c22713523ff83ebfc021d681a5d4f3cb
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: go-hermetic-example
     appstudio.openshift.io/component: go-hermetic-example
     pipelines.appstudio.openshift.io/type: build
-    pac.test.appstudio.openshift.io/repository: go-hermetic-example
-    pac.test.appstudio.openshift.io/sha: eec54871c22713523ff83ebfc021d681a5d4f3cb
-    pac.test.appstudio.openshift.io/url-repository: go-hermetic-example
+    pipelinesascode.tekton.dev/repository: go-hermetic-example
+    pipelinesascode.tekton.dev/sha: eec54871c22713523ff83ebfc021d681a5d4f3cb
+    pipelinesascode.tekton.dev/url-repository: go-hermetic-example
   name: go-hermetic-example-on-pull-request
   namespace: arewm-tenant
 spec:
