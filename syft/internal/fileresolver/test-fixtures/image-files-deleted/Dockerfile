@@ -1,4 +1,4 @@
-FROM alpine:3.17.1@sha256:93d5a28ff72d288d69b5997b8ba47396d2cbb62a72b5d87cd3351094b5d578a0 as tools
+FROM alpine:3.20.2@sha256:eddacbc7e24bf8799a4ed3cdcfa50d4b88a323695ad80f317b6629883b2c2a78 as tools
 FROM scratch
 COPY --from=tools /bin /bin
 COPY --from=tools /lib /lib
